@@ -1,0 +1,6 @@
+[submodule "road-safety-ui"]
+	path = road-safety-ui
+	url = git@github.com:alicia-lyu/road-safety-ui.git
+[submodule "graphhopper-for-safety"]
+	path = graphhopper-for-safety
+	url = git@github.com:alicia-lyu/graphhopper-for-safety.git

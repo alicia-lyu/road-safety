@@ -6,6 +6,17 @@ Both repos are based on open-source repos of graphhopper ([graphhopper](https://
 
 ## How to run the system locally
 
+First, ensure you have [a public SSH key added to your GitHub account](https://docs.github.com/en/github-ae@latest/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). We are going to use SSH to clone submodules.
+
+In desired directory, clone this repository and pull submodules by running
+
+```
+git clone https://github.com/alicia-lyu/road-safety.git
+git submodule update --init
+```
+
+At anytime during your usage of this code base, you need to keep an eye on whether there is a new release of the submodules. Just `cd` into each of the two submodules and run `git pull` beforehand.
+
 ### First, host the backend on your machine
 
 Prerequisites:
@@ -13,6 +24,7 @@ Prerequisites:
 1. [JDK 17+](https://www.oracle.com/java/technologies/downloads/)
 2. [Maven](https://maven.apache.org/install.html)
 3. Git
+4. wget
 
 Run the following commands
 

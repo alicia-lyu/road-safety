@@ -18,10 +18,12 @@ Run the following commands
 
 ```
 cd graphhopper-for-safety
-make serve
+make ${STATE}
 ```
 
-This will first retrieve `wisconsin-latest.osm.pbf`, if not already present. Then maven will compile the code and build the application. 
+Replace `${STATE}` with the state you want to do routing in. Any state in the continental US is automatically enabled. This will first retrieve `${STATE}-latest.osm.pbf`, if not already present. Then maven will compile the code and build the application. 
+
+Note that if you recently changed `${STATE}`, cache will be removed and it takes longer to start the application.
 
 Once it's done, you can check whether the backend is running on [http://localhost:8989](http://localhost:8989). You may need to refresh to zoom into the correct area. Note that we have a separate UI for user study, and this built-in UI is only for previewing purposes.
 
